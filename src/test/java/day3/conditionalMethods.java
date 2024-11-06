@@ -26,6 +26,8 @@ public class conditionalMethods {
 		System.out.println("Radio button selection status for male is : " + male.isSelected());
 		female.click();
 		System.out.println("Radio button selection status for female is : " + female.isSelected());
+		
+		driver.quit();
 	}
 
 }

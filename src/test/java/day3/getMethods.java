@@ -24,6 +24,7 @@ public class getMethods {
 		Set<String> windowIds = driver.getWindowHandles();
 		System.out.println(windowIds);
 		Thread.sleep(5000);
+		
 		driver.quit();
 	}
 
