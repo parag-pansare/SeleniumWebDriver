@@ -1,6 +1,9 @@
 package day1;
 
+
+
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class firstTest {
 
@@ -11,7 +14,11 @@ public class firstTest {
 		//demo.opencart.com
 		driver.manage().window().maximize();
 		String pageTitle = driver.getTitle();
-		System.out.println("Page title is : "+pageTitle);
+		//System.out.println("Page title is : "+pageTitle);
+		
+		/*String expectedTitle = "Demo Testing Site - GlobalSQA";
+		Assert.assertEquals(pageTitle, expectedTitle, "Not matching");
+		*/
 		
 		if(pageTitle.equals("Demo Testing Site - GlobalSQA")) {
 			System.out.println("Test passed");
