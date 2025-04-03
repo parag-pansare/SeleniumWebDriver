@@ -28,8 +28,9 @@ public class handleCheckbox {
 			cb.click();
 		}
 		*/
+		int n = checkboxes.size();
 		
-		for (int i=0; i<2; i++) {
+		for (int i=0; i<n; i++) {
 			checkboxes.get(i).click();
 		}
 		
